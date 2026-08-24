@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HIMNARIO PUERTA DEL CIELO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<div id="menu">
+    <h1>HIMNARIO PUERTA DEL CIELO</h1>
+    <h2>Selecciona tipo de alabanzas</h2>
+
+    <button onclick="mostrar('adoracion')">Adoración</button>
+    <button onclick="mostrar('avivamiento')">Avivamiento</button>
+    <button onclick="mostrar('programa de servicio')">programa de servicio</button>
+</div>
+
+<!-- ADORACION -->
+<div id="adoracion" style="display:none;">
+    <h1>Alabanzas de Adoración</h1>
+
+    <ol id="listaAdoracion">
+             <li><a href="alabanza6.html">DIOS IMPARABLE</a></li>
+             <li><a href="alabanza7.html">ES EXALTADO</a></li>
+             <li><a href="alabanza8.html">LIBRES JESUCRISTO NOS HIZO LIBRES</a></li>        
+    </ol>
+
+    <button onclick="volver()">⬅ Volver</button>
+</div>
+
+<!-- AVIVAMIENTO -->
+<div id="avivamiento" style="display:none;">
+    <h1>Alabanzas de Avivamiento</h1>
+
+    <ol id="listaAvivamiento">
+        <li><a href="alabanza1.html">MIRA CUAN BUENO</a></li>
+        <li><a href="alabanza2.html">GLORIA Y PODER</a></li>
+        <li><a href="alabanza3.html">BUENO ES ALABARTE OH DIOS</a></li>
+        <li><a href="alabanza4.html">TODOS UNIDOS A UNA VOZ</a></li>
+        <li><a href="alabanza5.html">HAY PODER EN JESÚS</a></li>
+      
+        
+    </ol>
+
+    <button onclick="volver()">⬅ Volver</button>
+</div>
+
+<!-- PROGRAMA DE SERVICIO -->
+<div id="programa de servicio" style="display:none;">
+    <h1>programa de servicio</h1>
+
+    <ol id="pendiente">
+        <li><a href="hermanojose.html">SEGUNDO HERMANO JOSE</a></li>
+         <li><a href="hermanorogelio.html">TERCERO HERMANO ROGELIO</a></li>
+         <li><a href="hermanonestor.html">HERMANO PASTOR UZIEL</a></li>
+       
+    </ol>
+
+    <button onclick="volver()">⬅ Volver</button>
+</div>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

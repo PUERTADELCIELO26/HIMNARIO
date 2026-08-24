@@ -1,0 +1,111 @@
+body {
+    font-family: Cocogoose, Arial, sans-serif;
+    background: url("../logopdc.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* TITULOS */
+h1 {
+    margin-top: 30px;
+    font-size: 17px;
+    color:darkgoldenrod
+}
+
+h2 {
+    font-size: 17px;
+    color: #02e3f3;
+}
+
+/* CONTENEDOR */
+#menu, #adoracion, #avivamiento, #programa de servicio {
+    width: min(100% - 32px, 720px);
+    margin: 0 auto;
+    padding: clamp(20px, 5vw, 40px);
+}
+
+/* BOTONES (VERTICAL) */
+button {
+    display: block;
+    width: min(100%, 320px);
+    margin: 14px auto;
+    padding: 16px 20px;
+    font-size: clamp(16px, 2.5vw, 20px);
+    border-radius: 10px;
+    border: none;
+    background: #d1d5db;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #9ca3af;
+}
+
+/* LISTA */
+ol {
+    list-style: none;
+    padding: 0;
+    width: min(100%, 620px);
+    margin: auto;
+}
+
+/* ITEMS */
+li {
+    margin: 10px 0;
+}
+
+/* LINKS (ALABANZAS) */
+a {
+    text-decoration: none;
+    color: black;
+    font-size: clamp(15px, 2.2vw, 18px);
+    font-family: Calibri;
+    background: #e5e7eb;
+    padding: 16px 18px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #d1d5db;
+}
+
+/* TEXTO DE ALABANZAS */
+.letra {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 15px;
+    font-family: Calibri;
+    background: #e5e7eb;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* ANIMACION */
+#menu, #adoracion, #avivamiento, #programa de servicio {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
