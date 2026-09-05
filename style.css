@@ -1,0 +1,135 @@
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f3efe5;
+    color: #18352d;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 28px 16px 48px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* TITULOS */
+h1 {
+    margin: 0 0 12px;
+    font-size: clamp(30px, 6vw, 54px);
+    line-height: 1.05;
+    letter-spacing: 0;
+    color: #f8f4e8;
+}
+
+h2 {
+    margin: 0 0 28px;
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: normal;
+    color: #dce9d6;
+}
+
+/* CONTENEDOR */
+#menu, #adoracion, #avivamiento, [id="programa de servicio"] {
+    width: min(100%, 860px);
+    margin: 0 auto;
+    padding: clamp(28px, 6vw, 64px) clamp(18px, 6vw, 64px);
+    background: #285548;
+    border-top: 8px solid #c49b4a;
+    box-shadow: 0 18px 45px rgba(24, 53, 45, 0.18);
+}
+
+#menu::before {
+    content: "✦  PUERTA DEL CIELO  ✦";
+    display: block;
+    margin-bottom: 22px;
+    color: #e2c47b;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* BOTONES (VERTICAL) */
+button {
+    display: block;
+    width: min(100%, 440px);
+    margin: 12px auto;
+    padding: 17px 22px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    border: 1px solid #e2c47b;
+    border-radius: 4px;
+    background: #f8f4e8;
+    color: #285548;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #e2c47b;
+    color: #18352d;
+    transform: translateY(-2px);
+}
+
+/* LISTA */
+ol {
+    list-style: none;
+    padding: 0;
+    width: min(100%, 680px);
+    margin: auto;
+}
+
+/* ITEMS */
+li {
+    margin: 8px 0;
+}
+
+/* LINKS (ALABANZAS) */
+a {
+    text-decoration: none;
+    color: #285548;
+    font-size: clamp(15px, 2.2vw, 18px);
+    font-family: Arial, sans-serif;
+    background: #f8f4e8;
+    padding: 15px 18px;
+    border-left: 4px solid #c49b4a;
+    border-radius: 2px;
+    display: block;
+    text-align: left;
+    transition: background 0.2s, padding-left 0.2s;
+}
+
+a:hover {
+    background: #e2c47b;
+    padding-left: 24px;
+}
+
+/* TEXTO DE ALABANZAS */
+.letra {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f8f4e8;
+    color: #18352d;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* ANIMACION */
+#menu, #adoracion, #avivamiento, [id="programa de servicio"] {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
